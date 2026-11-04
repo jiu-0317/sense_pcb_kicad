@@ -1,0 +1,17 @@
+# KiCad 자동 백업 / 히스토리
+*-backups/
+.history/
+_autosave-*
+\#auto_saved_files\#
+*.bak
+*.lck
+~*
+
+# 캐시 / 개인 설정 (창 위치, 레이어 표시 상태 등)
+fp-info-cache
+*.kicad_prl
+
+# 제작용 출력물 (언제든 다시 뽑을 수 있음)
+gerber*/
+*.zip
+*-all-pos.csv
