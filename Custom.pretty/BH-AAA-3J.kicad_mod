@@ -1,0 +1,121 @@
+(footprint "BH-AAA-3J"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "31961348-d25a-4463-bdf9-118511dd50ce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "BH-AAA-3J"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5309ba5f-810b-44f5-a93f-e48dc6c30770")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3e4b5b11-0293-487b-9acf-78d6ffa14373")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2ee80fcc-86cc-49d0-9e7d-2db14de425e2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -6.5 -2)
+		(end -4.5 -2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "93a59d10-3a9f-4a31-b475-2beb553325fb")
+	)
+	(fp_line
+		(start 5 -2.5)
+		(end 7 -2.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f600fd7a-f5eb-4a42-a091-8ba344e94d38")
+	)
+	(fp_line
+		(start 6 -3.5)
+		(end 6 -1.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6a97d5dc-ca04-4d1b-9a8f-e143bd788b0e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0a2dac01-8070-487f-a850-9a7285749583")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -5.6 0)
+		(size 2.5 2.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f44ad5d4-52ce-42e9-b671-cb03543e7843")
+	)
+	(pad "2" thru_hole circle
+		(at 6 0)
+		(size 2.5 2.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0acb6dac-0926-48b8-9982-431e9b991ff9")
+	)
+	(group ""
+		(uuid "c6fb9fd8-b49e-4504-9d5b-fe881ec204ff")
+		(members "0acb6dac-0926-48b8-9982-431e9b991ff9" "f44ad5d4-52ce-42e9-b671-cb03543e7843")
+	)
+	(embedded_fonts no)
+)

@@ -178,6 +178,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -189,6 +190,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -200,6 +202,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -492,6 +495,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -542,27 +546,9 @@
       },
       {
         "line_style": 0,
-        "name": "5V",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgb(234, 29, 255)",
-        "tuning_profile": "",
-        "wire_width": 12
-      },
-      {
-        "line_style": 0,
-        "name": "EN",
-        "pcb_color": "rgb(255, 211, 58)",
-        "priority": 2,
-        "schematic_color": "rgb(255, 211, 58)",
-        "tuning_profile": "",
-        "wire_width": 12
-      },
-      {
-        "line_style": 0,
         "name": "GND",
         "pcb_color": "rgb(132, 132, 132)",
-        "priority": 4,
+        "priority": 2,
         "schematic_color": "rgb(132, 132, 132)",
         "tuning_profile": "",
         "wire_width": 12
@@ -571,7 +557,7 @@
         "line_style": 0,
         "name": "GPIO",
         "pcb_color": "rgb(0, 0, 255)",
-        "priority": 5,
+        "priority": 3,
         "schematic_color": "rgb(0, 0, 255)",
         "tuning_profile": "",
         "wire_width": 12
@@ -580,16 +566,16 @@
         "line_style": 0,
         "name": "UART",
         "pcb_color": "rgb(0, 194, 0)",
-        "priority": 3,
-        "schematic_color": "rgb(0, 194, 0)",
+        "priority": 1,
+        "schematic_color": "rgb(89, 189, 61)",
         "tuning_profile": "",
         "wire_width": 12
       },
       {
-        "name": "VIN",
+        "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
-        "schematic_color": "rgb(178, 20, 255)",
+        "schematic_color": "rgb(255, 162, 8)",
         "tuning_profile": "",
         "wire_width": 12
       },
@@ -597,8 +583,8 @@
         "line_style": 0,
         "name": "power_33",
         "pcb_color": "rgb(255, 0, 0)",
-        "priority": 6,
-        "schematic_color": "rgb(255, 0, 0)",
+        "priority": 4,
+        "schematic_color": "rgb(255, 51, 15)",
         "tuning_profile": "",
         "wire_width": 12
       },
@@ -606,7 +592,7 @@
         "line_style": 0,
         "name": "power_45",
         "pcb_color": "rgb(194, 0, 0)",
-        "priority": 7,
+        "priority": 5,
         "schematic_color": "rgb(194, 0, 0)",
         "tuning_profile": "",
         "wire_width": 12
@@ -615,8 +601,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": [
       {
         "netclass": "power_45",
@@ -643,16 +629,24 @@
         "pattern": "RX"
       },
       {
-        "netclass": "EN",
+        "netclass": "GPIO",
         "pattern": "CHIP_PU"
       },
       {
-        "netclass": "5V",
-        "pattern": "5V"
+        "netclass": "power_45",
+        "pattern": "*VBUS*"
       },
       {
-        "netclass": "VIN",
+        "netclass": "power_45",
         "pattern": "VIN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "*USB*"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "*UD*"
       }
     ]
   },
@@ -674,7 +668,7 @@
     "annotate_start_num": 0,
     "annotation": {
       "method": 0,
-      "sort_order": 1
+      "sort_order": 0
     },
     "bom_export_filename": "gerber_07_01\\esp32_c3_mini_1_module.csv",
     "bom_fmt_presets": [],
@@ -873,14 +867,6 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -900,7 +886,7 @@
         "uuid": "30352ac3-b063-4df7-b327-16d2729e1e2c"
       }
     ],
-    "used_designators": "#FLG1-2,R1-19,J1-3,MH1-4,U1-5,D1-2,#PWR1-27,L1-2,C1-15,Q1-2,FID1-3,PS1,S1-2",
+    "used_designators": "#FLG1-5,#PWR1-26,C10-11,J2-3,L1,R13,U2,U6",
     "variants": []
   },
   "sheets": [
