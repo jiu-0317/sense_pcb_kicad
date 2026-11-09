@@ -3126,9 +3126,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom no)
@@ -3136,7 +3140,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -3145,8 +3149,8 @@
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -3177,7 +3181,7 @@
 					)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3199,7 +3203,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3210,9 +3214,9 @@
 					)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -3220,6 +3224,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -6199,7 +6223,7 @@
 		(uuid "041eccaa-a892-425a-9f6f-b82c62822729")
 	)
 	(rectangle
-		(start 336.55 191.77)
+		(start 336.55 182.245)
 		(end 356.87 204.47)
 		(stroke
 			(width 0.254)
@@ -6239,7 +6263,7 @@
 	)
 	(rectangle
 		(start 167.64 168.91)
-		(end 271.78 204.47)
+		(end 271.78 247.015)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -6290,7 +6314,7 @@
 		(uuid "ac6b49a9-0a55-4c32-89a9-a7fab94d4e7e")
 	)
 	(rectangle
-		(start 285.75 55.88)
+		(start 281.94 55.88)
 		(end 400.05 120.65)
 		(stroke
 			(width 0.254)
@@ -6557,6 +6581,12 @@
 		(uuid "0be98fbb-2f52-4641-a764-1203b3510c06")
 	)
 	(junction
+		(at 220.98 232.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12d990fc-031c-427c-b4c2-4cc803e79e4f")
+	)
+	(junction
 		(at 254 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6743,6 +6773,12 @@
 		(uuid "99ae1840-b8f7-43c8-8b15-83036d935b82")
 	)
 	(junction
+		(at 220.98 224.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a02979bc-a6f7-4264-8de4-9e9f753639bb")
+	)
+	(junction
 		(at 191.77 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6771,6 +6807,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0d7774e-5524-4848-9138-57413f9ab94c")
+	)
+	(junction
+		(at 344.17 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5d6ff8b-54a8-4188-a7fe-cd3f7a198da5")
 	)
 	(junction
 		(at 72.39 182.88)
@@ -6844,9 +6886,11 @@
 		(color 0 0 0 0)
 		(uuid "fa119d66-f961-4eea-9129-fce7eef9736a")
 	)
-	(no_connect
-		(at 313.69 83.82)
-		(uuid "22907d0c-0bcd-4980-98b8-bc2c1be95622")
+	(junction
+		(at 227.33 224.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ffe7a84d-fb9d-47ac-9873-889e0c2db309")
 	)
 	(no_connect
 		(at 146.05 107.95)
@@ -6855,10 +6899,6 @@
 	(no_connect
 		(at 73.66 96.52)
 		(uuid "618381bd-1b05-4ee8-83eb-d969710d6099")
-	)
-	(no_connect
-		(at 313.69 86.36)
-		(uuid "6509e9d3-90f1-43e1-a7b1-fea8183ed81f")
 	)
 	(no_connect
 		(at 227.33 186.69)
@@ -6881,6 +6921,10 @@
 		(uuid "a485ac46-ccf8-4c2d-94c4-3e07619b0d30")
 	)
 	(no_connect
+		(at 201.93 222.25)
+		(uuid "bd4e9571-2a6c-49d2-b8d4-12a962b9174f")
+	)
+	(no_connect
 		(at 237.49 181.61)
 		(uuid "cb545f56-d43e-49e5-95db-0abc1f7dc2c8")
 	)
@@ -6889,12 +6933,20 @@
 		(uuid "cedb4745-d940-4484-9c85-15d8c5d1ee34")
 	)
 	(no_connect
+		(at 313.69 93.98)
+		(uuid "d2a539be-e9e7-41bc-9b58-3557bb2f18a6")
+	)
+	(no_connect
 		(at 73.66 99.06)
 		(uuid "e1a0294a-f834-476d-a7a5-69d406e8e444")
 	)
 	(no_connect
 		(at 349.25 96.52)
 		(uuid "e6f06665-657a-49a2-8c14-be4c35e151de")
+	)
+	(no_connect
+		(at 212.09 217.17)
+		(uuid "ec19b75f-35ae-4007-b5cc-20676ee961a9")
 	)
 	(wire
 		(pts
@@ -6905,6 +6957,16 @@
 			(type default)
 		)
 		(uuid "004eeeda-8d53-4cb6-b4df-c40726c214ef")
+	)
+	(wire
+		(pts
+			(xy 227.33 222.25) (xy 227.33 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "014f8376-3cf6-47a3-8f17-538702226809")
 	)
 	(wire
 		(pts
@@ -7048,6 +7110,16 @@
 	)
 	(wire
 		(pts
+			(xy 344.17 190.5) (xy 346.71 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba912f1-4750-4cef-9974-bcd86a41b59c")
+	)
+	(wire
+		(pts
 			(xy 219.71 181.61) (xy 219.71 196.85)
 		)
 		(stroke
@@ -7085,6 +7157,26 @@
 			(type default)
 		)
 		(uuid "132079ec-4e3f-4445-a970-cceec3eac6e5")
+	)
+	(wire
+		(pts
+			(xy 194.31 217.17) (xy 201.93 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13758386-ead7-4800-a4f8-11495edbb7a8")
+	)
+	(wire
+		(pts
+			(xy 346.71 190.5) (xy 346.71 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "155d4bd4-e8e5-41a2-9561-ce6889101381")
 	)
 	(wire
 		(pts
@@ -8018,6 +8110,16 @@
 	)
 	(wire
 		(pts
+			(xy 308.61 86.36) (xy 313.69 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fce0df2-6224-4fd3-b480-f433ba13db35")
+	)
+	(wire
+		(pts
 			(xy 76.2 78.74) (xy 91.44 78.74)
 		)
 		(stroke
@@ -8038,6 +8140,26 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 231.14) (xy 220.98 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9126f8f0-8843-486a-a4d6-1b4d4fd70bc9")
+	)
+	(wire
+		(pts
+			(xy 339.09 190.5) (xy 344.17 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9299fd0b-e76e-4621-8e12-f229ee995a0b")
+	)
+	(wire
+		(pts
 			(xy 280.67 196.85) (xy 280.67 191.77)
 		)
 		(stroke
@@ -8045,6 +8167,16 @@
 			(type default)
 		)
 		(uuid "92bc4bd5-3d0f-4269-a800-6329dead4a99")
+	)
+	(wire
+		(pts
+			(xy 220.98 222.25) (xy 220.98 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92c943c7-2a9f-4dca-bd01-a16129e05d9a")
 	)
 	(wire
 		(pts
@@ -8128,6 +8260,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 224.79) (xy 233.68 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a99650f-0787-4b51-87f4-1a5618815971")
+	)
+	(wire
+		(pts
 			(xy 101.6 76.2) (xy 104.14 76.2)
 		)
 		(stroke
@@ -8168,6 +8310,16 @@
 	)
 	(wire
 		(pts
+			(xy 308.61 83.82) (xy 313.69 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ddc7f7d-bc1a-48c5-bdb0-e7dadcef7b92")
+	)
+	(wire
+		(pts
 			(xy 261.62 85.09) (xy 261.62 105.41)
 		)
 		(stroke
@@ -8188,7 +8340,17 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 88.9) (xy 298.45 88.9)
+			(xy 220.98 224.79) (xy 227.33 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f04170f-8213-481d-b66d-b0c8b34a362b")
+	)
+	(wire
+		(pts
+			(xy 293.37 88.9) (xy 294.64 88.9)
 		)
 		(stroke
 			(width 0)
@@ -8275,6 +8437,16 @@
 			(type default)
 		)
 		(uuid "b0506ab7-daf4-4bdf-842e-e06371f7470f")
+	)
+	(wire
+		(pts
+			(xy 220.98 224.79) (xy 220.98 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b17e45a0-4866-41c5-ae30-2f996a73f82f")
 	)
 	(wire
 		(pts
@@ -8368,6 +8540,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 222.25) (xy 220.98 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be9c191f-1220-4e1f-b7dd-49ce278fc7ba")
+	)
+	(wire
+		(pts
 			(xy 73.66 87.63) (xy 87.63 87.63)
 		)
 		(stroke
@@ -8378,7 +8560,7 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 88.9) (xy 313.69 88.9)
+			(xy 299.72 88.9) (xy 313.69 88.9)
 		)
 		(stroke
 			(width 0)
@@ -8415,16 +8597,6 @@
 			(type default)
 		)
 		(uuid "c6f3a943-9463-4f1b-95e8-1e2626f04a15")
-	)
-	(wire
-		(pts
-			(xy 308.61 93.98) (xy 313.69 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c78e64c1-9bf3-4d54-b31c-5b6aa37198c3")
 	)
 	(wire
 		(pts
@@ -8648,6 +8820,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 232.41) (xy 220.98 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1c7e566-3a00-4a91-9124-287f5a84859a")
+	)
+	(wire
+		(pts
 			(xy 87.63 87.63) (xy 87.63 90.17)
 		)
 		(stroke
@@ -8655,6 +8837,16 @@
 			(type default)
 		)
 		(uuid "e28ac1ee-28e9-4652-813a-d2879030dd3c")
+	)
+	(wire
+		(pts
+			(xy 227.33 214.63) (xy 227.33 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e505c08f-8c34-4a45-8104-2e08a04ab741")
 	)
 	(wire
 		(pts
@@ -8815,6 +9007,16 @@
 			(type default)
 		)
 		(uuid "fe3d7164-f4f4-4dd0-8639-95071b146d13")
+	)
+	(wire
+		(pts
+			(xy 194.31 217.17) (xy 194.31 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff5618d7-9387-47cc-84e2-6a97fc63e9d0")
 	)
 	(wire
 		(pts
@@ -11758,9 +11960,9 @@
 			)
 		)
 	)
-	(global_label "GPIO4"
+	(global_label "GPIO0"
 		(shape input)
-		(at 308.61 93.98 180)
+		(at 308.61 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11770,7 +11972,7 @@
 		)
 		(uuid "a80b359f-a2eb-4023-8d46-c18d9a51fec4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 299.94 93.98 0)
+			(at 299.94 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11784,7 +11986,7 @@
 	)
 	(global_label "VDD33"
 		(shape input)
-		(at 297.18 88.9 180)
+		(at 293.37 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11794,7 +11996,7 @@
 		)
 		(uuid "abc4ad5d-5dcf-47dd-b178-87aa7e641c3f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 288.1472 88.9 0)
+			(at 284.3372 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11830,6 +12032,30 @@
 			)
 		)
 	)
+	(global_label "GPIO1"
+		(shape input)
+		(at 233.68 224.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b923f024-a6b7-478d-9a72-420caf3beb19")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 242.35 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "GPIO18"
 		(shape input)
 		(at 317.5 191.77 0)
@@ -11854,7 +12080,7 @@
 			)
 		)
 	)
-	(global_label "GPIO4"
+	(global_label "GPIO0"
 		(shape input)
 		(at 77.47 182.88 0)
 		(fields_autoplaced yes)
@@ -11923,6 +12149,54 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "VDD33"
+		(shape input)
+		(at 227.33 214.63 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d6f4db71-b03f-4b93-8620-f5d1057a35f4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.33 205.5972 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "GPIO1"
+		(shape input)
+		(at 308.61 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dca35417-bff0-48ff-a233-adb8ed6cab78")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 299.94 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -12412,93 +12686,6 @@
 			(project "esp32_c3_mini_1_module"
 				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
 					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 349.25 195.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1bc3238d-7d08-4aea-ba92-dc5cb7405477")
-		(property "Reference" "MH3"
-			(at 351.79 194.3099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3"
-			(at 351.79 196.8499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 349.25 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 349.25 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 349.25 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF_part_number" ""
-			(at 349.25 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "esp32_c3_mini_1_module"
-				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
-					(reference "MH3")
 					(unit 1)
 				)
 			)
@@ -13151,93 +13338,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 344.17 195.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "25b51d4b-eb4d-4c4e-b981-96666844c948")
-		(property "Reference" "MH2"
-			(at 346.71 194.3099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3"
-			(at 346.71 196.8499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 344.17 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 344.17 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 344.17 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF_part_number" ""
-			(at 344.17 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "esp32_c3_mini_1_module"
-				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
-					(reference "MH2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Interface_USB:CH340E")
 		(at 135.89 110.49 0)
 		(unit 1)
@@ -13295,6 +13395,61 @@
 			)
 		)
 		(property "Description" "USB serial converter, UART, MSOP-10"
+			(at 135.89 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" "USB to Serial Port Chip CH340"
+			(at 135.89 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C99652"
+			(at 135.89 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "WCH"
+			(at 135.89 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF_part_number" "CH340E"
+			(at 135.89 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "MSOP-10"
 			(at 135.89 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -13482,6 +13637,84 @@
 			(project "esp32_c3_mini_1_module"
 				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 346.71 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29aae7b5-e0ad-41ea-8d10-9deb1975646a")
+		(property "Reference" "#PWR027"
+			(at 346.71 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 346.71 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 346.71 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 346.71 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 346.71 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a7b31361-5cb0-4524-9381-1e436cd903c2")
+		)
+		(instances
+			(project "esp32_c3_mini_1_module"
+				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -15417,7 +15650,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 300.99 88.9 90)
+		(at 297.18 88.9 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15427,7 +15660,7 @@
 		(dnp no)
 		(uuid "6957cf1f-25fa-42d0-9c70-4cea7fb419c4")
 		(property "Reference" "R17"
-			(at 302.514 85.09 90)
+			(at 302.768 87.376 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15438,7 +15671,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 302.768 86.868 90)
+			(at 298.958 86.868 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15449,7 +15682,7 @@
 			)
 		)
 		(property "Footprint" "Custom:RESC2012X60N"
-			(at 300.99 88.9 0)
+			(at 297.18 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15460,7 +15693,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C84376.pdf"
-			(at 300.99 88.9 0)
+			(at 297.18 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15471,7 +15704,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 300.99 88.9 0)
+			(at 297.18 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15482,7 +15715,7 @@
 			)
 		)
 		(property "Description_1" "125mW 10kΩ 150V Thick Film Resistor ±100ppm/℃ ±1% 0805 Chip Resistor - Surface Mount RoHS"
-			(at 300.99 88.9 90)
+			(at 297.18 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15493,7 +15726,7 @@
 			)
 		)
 		(property "LCSC" "C84376"
-			(at 300.99 88.9 90)
+			(at 297.18 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15504,7 +15737,7 @@
 			)
 		)
 		(property "MANUFACTURER" "YAGEO"
-			(at 300.99 88.9 90)
+			(at 297.18 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15515,7 +15748,7 @@
 			)
 		)
 		(property "MF_part_number" "RC0805FR-0710KL"
-			(at 300.99 88.9 90)
+			(at 297.18 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15526,7 +15759,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 300.99 88.9 90)
+			(at 297.18 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15546,6 +15779,85 @@
 			(project "esp32_c3_mini_1_module"
 				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
 					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 344.17 187.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69f73056-9ec5-4ea8-9d29-eafa9e697f4e")
+		(property "Reference" "MH2"
+			(at 346.71 185.4199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M2"
+			(at 346.71 187.9599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+			(at 344.17 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 344.17 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 344.17 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "95786f21-3a43-4f3f-b806-d54d64295cc3")
+		)
+		(instances
+			(project "esp32_c3_mini_1_module"
+				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
+					(reference "MH2")
 					(unit 1)
 				)
 			)
@@ -15607,6 +15919,61 @@
 			)
 		)
 		(property "Description" ""
+			(at 213.36 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" "High-efficiency, low-IQ step-down/step-up converter in DFN package"
+			(at 213.36 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1849531"
+			(at 213.36 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "TI"
+			(at 213.36 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF_part_number" "TPS63802DLAT"
+			(at 213.36 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "VSON-10(2x3)"
 			(at 213.36 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -16502,6 +16869,61 @@
 				)
 			)
 		)
+		(property "Description_1" "USB Type C Receptacle for USB 2.0, SMT Type, PCB Top Mount"
+			(at 58.42 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3025063"
+			(at 58.42 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Global Connector Technology"
+			(at 58.42 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF_part_number" "USB4105-GF-A-060"
+			(at 58.42 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "SMD"
+			(at 58.42 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "B7"
 			(uuid "d51ca9a7-6faf-4497-8603-fdbf84d2e637")
 		)
@@ -17072,6 +17494,143 @@
 			(project "esp32_c3_mini_1_module"
 				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
 					(reference "FID2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 220.98 228.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ae82b71-945b-4d99-9358-87c01654f0cd")
+		(property "Reference" "C14"
+			(at 223.52 227.3362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 223.52 229.8762 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Custom:CAPC2012X95N"
+			(at 220.98 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1852967.pdf"
+			(at 220.98 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 220.98 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" "100nF ±10% 10V Ceramic Capacitor X7R 0805"
+			(at 220.98 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1852967"
+			(at 220.98 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO"
+			(at 220.98 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF_part_number" "CC0805KRX7R6BB104"
+			(at 220.98 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805"
+			(at 220.98 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f9104c62-8c0a-4755-b8d5-83d16e8a6946")
+		)
+		(pin "1"
+			(uuid "4206485f-85d1-49c7-a2da-e1f505f6d351")
+		)
+		(instances
+			(project "esp32_c3_mini_1_module"
+				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -17960,8 +18519,8 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 213.36 50.8 0)
+		(property "Value" "0.47uH"
+			(at 213.614 52.832 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17981,7 +18540,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.coilcraft.com/getmedia/84927b8b-f089-421b-a7f4-a0fa23afe908/xfl4015.pdf"
 			(at 213.36 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -17993,6 +18552,61 @@
 			)
 		)
 		(property "Description" ""
+			(at 213.36 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" "FIXED IND 470nH SMD,4x4mm"
+			(at 213.36 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C18221164"
+			(at 213.36 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Coilcraft"
+			(at 213.36 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF_part_number" "XFL4015-471MEC"
+			(at 213.36 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "SMD,4x4mm"
 			(at 213.36 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -18196,7 +18810,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 262.636 84.328 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18305,6 +18919,142 @@
 			(project "esp32_c3_mini_1_module"
 				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 227.33 219.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9f776329-8278-4428-bf87-593121215107")
+		(property "Reference" "R19"
+			(at 225.044 218.186 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 222.758 220.472 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Custom:RESC2012X60N"
+			(at 227.33 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C84376.pdf"
+			(at 227.33 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 227.33 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" "125mW 10kΩ 150V Thick Film Resistor ±100ppm/℃ ±1% 0805 Chip Resistor - Surface Mount RoHS"
+			(at 227.33 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C84376"
+			(at 227.33 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "YAGEO"
+			(at 227.33 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF_part_number" "RC0805FR-0710KL"
+			(at 227.33 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "0805"
+			(at 227.33 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f6d64c25-cf67-4115-bb02-f31ed25bfd32")
+		)
+		(pin "1"
+			(uuid "c82265ac-d273-4a8a-9793-9d19e2fd3dd0")
+		)
+		(instances
+			(project "esp32_c3_mini_1_module"
+				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -18679,7 +19429,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b29c8164-fb4b-4ea4-9e37-7ffed85fb17f")
 		(property "Reference" "#PWR024"
 			(at 307.34 85.09 0)
@@ -18693,7 +19442,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 307.34 83.82 0)
+			(at 304.546 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18979,6 +19728,50 @@
 				(justify bottom)
 			)
 		)
+		(property "Description_1" "MOSFET P-CH 20V 5A SOT-23"
+			(at 137.16 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C144153"
+			(at 137.16 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF_part_number" "DMG2305UX-13"
+			(at 137.16 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "SOT-23"
+			(at 137.16 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c0cf2534-4733-4fcc-9667-e83923aa2c87")
 		)
@@ -19057,6 +19850,61 @@
 			)
 		)
 		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
+			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" "ESD DIODE 5.25VWM 17VC SOT-23-6L"
+			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7519"
+			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "ST"
+			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF_part_number" "USBLC6-2SC6"
+			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "SOT-23-6L"
 			(at 96.52 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -19231,6 +20079,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 339.09 187.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1a3243b-2e32-410e-adb7-25310a5dc30d")
+		(property "Reference" "MH1"
+			(at 341.63 185.4199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M2"
+			(at 341.63 187.9599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+			(at 339.09 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 339.09 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "16567b28-7713-4b58-9d41-2d8e532d8e2a")
+		)
+		(instances
+			(project "esp32_c3_mini_1_module"
+				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
+					(reference "MH1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 292.1 162.56 0)
 		(unit 1)
@@ -19305,6 +20232,84 @@
 			(project "esp32_c3_mini_1_module"
 				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
 					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220.98 232.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c86389ef-d52d-4940-87ab-a2d99efe8e6a")
+		(property "Reference" "#PWR028"
+			(at 220.98 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 220.98 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 220.98 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a8cd0701-eca5-40ee-9c73-f4b817b3fb93")
+		)
+		(instances
+			(project "esp32_c3_mini_1_module"
+				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -19802,6 +20807,61 @@
 				)
 			)
 		)
+		(property "Description_1" "DIODE SCHOTTKY 40V SMA(DO-214AC)"
+			(at 132.08 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C47460"
+			(at 132.08 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "VISHAY"
+			(at 132.08 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF_part_number" "SS14-E3/61T"
+			(at 132.08 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "SMA(DO-214AC)"
+			(at 132.08 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5d10dc47-7186-4701-a485-c576d4272988")
 		)
@@ -20091,93 +21151,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 339.09 195.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d83b673d-5215-4e99-9a78-3216f7da995a")
-		(property "Reference" "MH1"
-			(at 341.63 194.3099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3"
-			(at 341.63 196.8499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 339.09 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 339.09 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 339.09 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF_part_number" ""
-			(at 339.09 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "esp32_c3_mini_1_module"
-				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
-					(reference "MH1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 58.42 193.04 0)
 		(unit 1)
@@ -20330,93 +21303,6 @@
 			(project "esp32_c3_mini_1_module"
 				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
 					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 354.33 195.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc608e5e-911c-4f09-b5ed-53b8a8849efc")
-		(property "Reference" "MH4"
-			(at 356.87 194.3099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3"
-			(at 356.87 196.8499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 354.33 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 354.33 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 354.33 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF_part_number" ""
-			(at 354.33 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "esp32_c3_mini_1_module"
-				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
-					(reference "MH4")
 					(unit 1)
 				)
 			)
@@ -21045,6 +21931,223 @@
 		)
 	)
 	(symbol
+		(lib_id "SKRPACE010:SKRPACE010")
+		(at 207.01 219.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f211a920-d756-4a72-8df3-6e73ee13e328")
+		(property "Reference" "S3"
+			(at 207.01 212.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SKRPACE010"
+			(at 207.01 214.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom:SW_SKRPACE010"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C139797.pdf"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" "ALPS"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Description_1" "Switch Tactile N.O. SPST Button J-Bend 0.05A 16VDC 2.55N SMD Automotive T/R"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SMD-4P,4.2x3.2mm"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/SKRPACE010/ALPS/view-part/?ref=eda"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Maniufacturer Recommendations"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SKRPACE010/ALPS/view-part/?ref=snap"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "SKRPACE010"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "ALPSALPINE"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "LCSC" "C139797"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF_part_number" "SKRPACE010"
+			(at 207.01 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "b3c4f540-222c-40d5-b83e-82432e718669")
+		)
+		(pin "1"
+			(uuid "6a6ac606-b2ad-485e-9f86-766da4424f20")
+		)
+		(pin "2"
+			(uuid "ae8be243-bd02-428b-ab01-0bd126c758bf")
+		)
+		(pin "3"
+			(uuid "f4900c8c-7254-4bb3-9c85-237815f68bf5")
+		)
+		(instances
+			(project "esp32_c3_mini_1_module"
+				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "symbol:BH-AAA-A1AJ024")
 		(at 300.99 162.56 0)
 		(unit 1)
@@ -21133,6 +22236,61 @@
 		)
 		(property "LCSC Part" "C5290193"
 			(at 300.99 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description_1" "BATTERY HOLDER CYLINDRICAL AAA"
+			(at 300.99 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5290193"
+			(at 300.99 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "MYOUNG"
+			(at 300.99 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF_part_number" "BH-AAA-A1AJ024"
+			(at 300.99 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "-"
+			(at 300.99 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
