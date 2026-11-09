@@ -15,3 +15,5 @@ fp-info-cache
 gerber*/
 *.zip
 *-all-pos.csv
+# 삭제 예정 파일 모음
+_to_delete/
