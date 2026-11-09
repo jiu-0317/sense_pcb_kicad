@@ -15771,7 +15771,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5e022832-5d22-44d2-af53-63755e537c95")
-		(property "Reference" "TP3"
+		(property "Reference" "GND0"
 			(at 356.87 103.632 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15832,7 +15832,7 @@
 		(instances
 			(project "esp32_c3_mini_1_module"
 				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
-					(reference "TP3")
+					(reference "GND0")
 					(unit 1)
 				)
 			)
@@ -18299,7 +18299,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "99588ac4-db35-40da-9fb0-2b0ce1c5a4af")
-		(property "Reference" "TP1"
+		(property "Reference" "RX0"
 			(at 307.086 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18360,7 +18360,7 @@
 		(instances
 			(project "esp32_c3_mini_1_module"
 				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
-					(reference "TP1")
+					(reference "RX0")
 					(unit 1)
 				)
 			)
@@ -21120,7 +21120,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d7094f64-099a-4a7b-8e7b-ddf852bb0351")
-		(property "Reference" "TP2"
+		(property "Reference" "TX0"
 			(at 296.926 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21181,7 +21181,7 @@
 		(instances
 			(project "esp32_c3_mini_1_module"
 				(path "/30352ac3-b063-4df7-b327-16d2729e1e2c"
-					(reference "TP2")
+					(reference "TX0")
 					(unit 1)
 				)
 			)
